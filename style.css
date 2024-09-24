@@ -17,7 +17,7 @@ body {
 
 
 header {
-  background-color: #674636;
+  background-color: #c5bb9d;
   color: #fff;
   padding: 10px 0;
   text-align: center;
@@ -28,6 +28,7 @@ header {
 
 header h1 {
   margin-bottom: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
@@ -37,7 +38,7 @@ nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  transition: co;
+  align-items: center;
 }
 
 
@@ -51,9 +52,15 @@ nav ul li {
 
 
 nav ul li a {
-  color: #fff;
+  color: #000000;
   text-decoration: none;
   font-size: 18px;
+}
+
+nav ul li a:hover { 
+  background-color: #674636;
+  color: white;
+  border-radius: 10%;
 }
 
 
@@ -88,7 +95,7 @@ main h3 {
   max-width: 600px;
   height: auto;
   margin-top: 20px;
-  border-radius: 20%;
+  border-radius: 5%;
 }
 
 
@@ -147,11 +154,16 @@ footer {
   background-color: #674636;
   color: #fff;
   text-align: center;
-  padding: 10px 0;
+  padding: 10px;
   position: fixed;
   width: 100%;
   bottom: 0;
+  align-items: flex-start;
+ 
+
 }
+
+
 
 
 /* From Uiverse.io by joe-watson-sbf */
@@ -360,7 +372,7 @@ div.card {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #e9ac04;
+  background: #825B32;
   margin-bottom: 16px;
 }
 
