@@ -1,56 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contato - Café do Vale</title>
-    <link rel="stylesheet" href="/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
     <header>
-        <h1>Café do Vale</h1>
-        <nav>
-            <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/pages/cardapio.html">Cardápio</a></li>
-                <li><a href="/pages/contato.html">Contato</a></li>
-            </ul>
-        </nav>
+      <h1>Café do Vale</h1>
+      <nav>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/pages/cardapio.html">Cardápio</a></li>
+          <li><a href="/pages/contato.html">Contato</a></li>
+        </ul>
+      </nav>
     </header>
 
-
     <main>
-        <h2>Fale Conosco</h2>
-        <p>Nosso endereço: Rua da Alegria, 123, Centro, São Paulo - SP</p>
+      <h2>Fale Conosco</h2>
+      <p>Nosso endereço: Rua da Alegria, 123, Centro, São Paulo - SP</p>
 
+      <form action="#" method="POST">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required />
 
-        <form action="#" method="POST">
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" required>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required />
 
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" required></textarea>
 
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
+        <button type="submit">Enviar</button>
+      </form>
 
-
-            <label for="message">Mensagem:</label>
-            <textarea id="message" name="message" required></textarea>
-
-
-            <button type="submit">Enviar</button>
-        </form>
-
-
-        <section class="map">
-            <h3>Veja nossa localização:</h3>
-            <a href="https://www.google.com.br/maps/@-37.281147,-12.6954193,12.25z?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Clique aqui para ver nossa localização</a>
-        </section>
+      <section class="map">
+        <h3>Veja nossa localização:</h3>
+        <a
+          href="https://www.google.com.br/maps/@-37.281147,-12.6954193,12.25z?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D"
+          target="_blank"
+          >Clique aqui para ver nossa localização</a
+        >
+      </section>
     </main>
 
-
     <footer>
-        <p>&copy; 2024 Café do Vale. Todos os direitos reservados.</p>
+      <p>&copy; 2024 Café do Vale. Todos os direitos reservados.</p>
     </footer>
-   
-</body>
+  </body>
 </html>

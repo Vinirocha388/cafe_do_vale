@@ -67,7 +67,8 @@ main {
 
 
 
-main h2, main h3 {
+main h2,
+main h3 {
   margin-bottom: 20px;
 }
 
@@ -112,7 +113,8 @@ form label {
 
 
 
-form input, form textarea {
+form input,
+form textarea {
   padding: 10px;
   margin-bottom: 20px;
   border: 1px solid #ccc;
@@ -152,26 +154,20 @@ footer {
 }
 
 
-
-
-
-
-
-
 /* From Uiverse.io by joe-watson-sbf */
 .card {
   width: 190px;
   height: 120px;
   transition: all .5s;
   box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.11),
-             -15px -15px 30px #00000015;
+    -15px -15px 30px #00000015;
   text-align: center;
   overflow: hidden;
 
 
 
 
- 
+
 }
 
 
@@ -246,48 +242,21 @@ footer {
 .card .content .btn-link:hover {
   border-bottom: 1px solid #1d8122;
 }
-div.card{
-  justify-content: right;
-  padding: 1%;
+
+div.card {
+  justify-content: left;
+  padding: 5%;
   align-items: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Contêiner para os cards */
 .cards-container {
   display: flex;
-  justify-content: space-around; /* Distribui os itens igualmente */
-  align-items: center; /* Alinha os itens no centro */
+  justify-content: space-around;
+  /* Distribui os itens igualmente */
+  align-items: center;
+  /* Alinha os itens no centro */
   padding: 20px;
 }
 
@@ -300,7 +269,8 @@ div.card{
   box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.11), -15px -15px 30px #00000015;
   text-align: center;
   overflow: hidden;
-  margin: 10px; /* Adiciona espaço entre os cards */
+  margin: 10px;
+  /* Adiciona espaço entre os cards */
 }
 
 
@@ -368,82 +338,83 @@ div.card{
 
 /* From Uiverse.io by joe-watson-sbf */
 .card {
-    width: 190px;
-    height: 120px;
-    transition: all .5s;
-    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.11),
-               -15px -15px 30px #00000015;
-    text-align: center;
-    overflow: hidden;
+  width: 190px;
+  height: 120px;
+  transition: all .5s;
+  box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.11),
+    -15px -15px 30px #00000015;
+  text-align: center;
+  overflow: hidden;
 
 
-   
-  }
- 
-  .card:hover {
-    height: 260px;
-  }
- 
-  .card .header {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: #e9ac04;
-    margin-bottom: 16px;
-  }
- 
-  .card .header .img-box {
-    width: 50px;
-  }
- 
-  .card .header .title {
-    font-size: 1em;
-    letter-spacing: .1em;
-    font-weight: 900;
-    text-transform: uppercase;
-    padding: 4px 0 14px 0;
-    transition: all .5s;
-    color: #edededc5;
-  }
- 
-  .card:hover .header {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
-  }
- 
-  .card:hover .card .header .title {
-    padding: 0;
-  }
- 
-  .card .content {
-    display: block;
-    text-align: left;
-    color: #000000;
-    margin: 0 18px;
-  }
- 
-  .card .content p {
-    transition: all .5s;
-    font-size: .8em;
-    margin-bottom: 8px;
-  }
- 
-  .card .content a {
-    color: #1d8122;
-    cursor: pointer;
-    transition: all .5s;
-    font-size: .7rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    align-items: center;
-  }
- 
-  .card .content .btn-link:hover {
-    border-bottom: 1px solid #1d8122;
-  }
-  div.card{
-    justify-content: right;
-    padding: 1%;
-    align-items: center;
-  }
+
+}
+
+.card:hover {
+  height: 260px;
+}
+
+.card .header {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #e9ac04;
+  margin-bottom: 16px;
+}
+
+.card .header .img-box {
+  width: 50px;
+}
+
+.card .header .title {
+  font-size: 1em;
+  letter-spacing: .1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 4px 0 14px 0;
+  transition: all .5s;
+  color: #edededc5;
+}
+
+.card:hover .header {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+}
+
+.card:hover .card .header .title {
+  padding: 0;
+}
+
+.card .content {
+  display: block;
+  text-align: left;
+  color: #000000;
+  margin: 0 18px;
+}
+
+.card .content p {
+  transition: all .5s;
+  font-size: .8em;
+  margin-bottom: 8px;
+}
+
+.card .content a {
+  color: #1d8122;
+  cursor: pointer;
+  transition: all .5s;
+  font-size: .7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  align-items: center;
+}
+
+.card .content .btn-link:hover {
+  border-bottom: 1px solid #1d8122;
+}
+
+div.card {
+  justify-content: right;
+  padding:2px;
+  align-items: center;
+}
