@@ -59,6 +59,7 @@ nav ul li a:hover {
 main {
   padding: 20px;
   text-align: center;
+  
 }
 
 main h2,
@@ -69,16 +70,18 @@ main h3 {
 }
 
 .welcome p {
-  margin: 20px 0;
   font-size: 18px;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
 }
 
 .image-highlight img {
   width: 100%;
   max-width: 600px;
   height: auto;
-  margin-top: 20px;
   border-radius: 5%;
+  margin-top: 20px;
 }
 
 form {
@@ -234,7 +237,8 @@ div.card {
     font-size: 1.5rem;
   }
 
-  main h2, main h3 {
+  main h2,
+  main h3 {
     font-size: 150%;
   }
 }
@@ -251,7 +255,8 @@ div.card {
     margin-bottom: 20px;
   }
 
-  main h2, main h3 {
+  main h2,
+  main h3 {
     font-size: 180%;
   }
 
