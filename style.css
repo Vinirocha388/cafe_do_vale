@@ -1,38 +1,37 @@
+:root {
+  /* Variáveis de cores */
+  --background-color: #f4f4f4;
+  --header-bg-color: #c5bb9d;
+  --nav-text-color: #000000;
+  --nav-hover-bg-color: #674636;
+  --nav-hover-text-color: #ffffff;
+  --footer-bg-color: #674636;
+  --footer-text-color: #ffffff;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
-
-
 body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
-  background-color: #f4f4f4;
+  background-color: var(--background-color);
 }
 
-
-
-
 header {
-  background-color: #c5bb9d;
+  background-color: var(--header-bg-color);
   color: #fff;
   padding: 10px 0;
   text-align: center;
 }
 
-
-
-
 header h1 {
   margin-bottom: 10px;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
-
-
 
 nav ul {
   list-style: none;
@@ -41,54 +40,38 @@ nav ul {
   align-items: center;
 }
 
-
-
-
 nav ul li {
   margin: 0 15px;
 }
 
-
-
-
 nav ul li a {
-  color: #000000;
+  color: var(--nav-text-color);
   text-decoration: none;
   font-size: 18px;
 }
 
-nav ul li a:hover { 
-  background-color: #674636;
-  color: white;
+nav ul li a:hover {
+  background-color: var(--nav-hover-bg-color);
+  color: var(--nav-hover-text-color);
   border-radius: 10%;
 }
-
-
-
 
 main {
   padding: 20px;
   text-align: center;
 }
 
-
-
-
 main h2,
 main h3 {
   margin-bottom: 20px;
+  font-size: 200%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
-
-
 
 .welcome p {
   margin: 20px 0;
   font-size: 18px;
 }
-
-
-
 
 .image-highlight img {
   width: 100%;
@@ -98,9 +81,6 @@ main h3 {
   border-radius: 5%;
 }
 
-
-
-
 form {
   display: flex;
   flex-direction: column;
@@ -109,16 +89,10 @@ form {
   margin-bottom: 30px;
 }
 
-
-
-
 form label {
   margin: 10px 0 5px 0;
   text-align: left;
 }
-
-
-
 
 form input,
 form textarea {
@@ -127,9 +101,6 @@ form textarea {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
-
-
-
 
 form button {
   padding: 10px;
@@ -140,140 +111,22 @@ form button {
   cursor: pointer;
 }
 
-
-
-
 form button:hover {
   background-color: #555;
 }
 
-
-
-
 footer {
-  background-color: #674636;
-  color: #fff;
+  background-color: var(--footer-bg-color);
+  color: var(--footer-text-color);
   text-align: center;
   padding: 10px;
   position: fixed;
   width: 100%;
   bottom: 0;
   align-items: flex-start;
- 
-
 }
 
 
-
-
-/* From Uiverse.io by joe-watson-sbf */
-.card {
-  width: 190px;
-  height: 120px;
-  transition: all .5s;
-  box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.11),
-    -15px -15px 30px #00000015;
-  text-align: center;
-  overflow: hidden;
-
-
-
-
-
-}
-
-
-.card:hover {
-  height: 260px;
-}
-
-
-.card .header {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: #e9ac04;
-  margin-bottom: 16px;
-}
-
-
-.card .header .img-box {
-  width: 50px;
-}
-
-
-.card .header .title {
-  font-size: 1em;
-  letter-spacing: .1em;
-  font-weight: 900;
-  text-transform: uppercase;
-  padding: 4px 0 14px 0;
-  transition: all .5s;
-  color: #edededc5;
-}
-
-
-.card:hover .header {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
-}
-
-
-.card:hover .card .header .title {
-  padding: 0;
-}
-
-
-.card .content {
-  display: block;
-  text-align: left;
-  color: #000000;
-  margin: 0 18px;
-}
-
-
-.card .content p {
-  transition: all .5s;
-  font-size: .8em;
-  margin-bottom: 8px;
-}
-
-
-.card .content a {
-  color: #1d8122;
-  cursor: pointer;
-  transition: all .5s;
-  font-size: .7rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  align-items: center;
-}
-
-
-.card .content .btn-link:hover {
-  border-bottom: 1px solid #1d8122;
-}
-
-div.card {
-  justify-content: left;
-  padding: 5%;
-  align-items: center;
-}
-
-
-/* Contêiner para os cards */
-.cards-container {
-  display: flex;
-  justify-content: space-around;
-  /* Distribui os itens igualmente */
-  align-items: center;
-  /* Alinha os itens no centro */
-  padding: 20px;
-}
-
-
-/* Ajustes no card */
 .card {
   width: 190px;
   height: 120px;
@@ -282,14 +135,11 @@ div.card {
   text-align: center;
   overflow: hidden;
   margin: 10px;
-  /* Adiciona espaço entre os cards */
 }
-
 
 .card:hover {
   height: 260px;
 }
-
 
 .card .header {
   padding: 20px;
@@ -297,10 +147,13 @@ div.card {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #e9ac04;
+  background: #825b32;
   margin-bottom: 16px;
 }
 
+.card .header .img-box {
+  width: 50px;
+}
 
 .card .header .title {
   font-size: 1em;
@@ -312,6 +165,13 @@ div.card {
   color: #edededc5;
 }
 
+.card:hover .header {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+}
+
+.card:hover .header .title {
+  padding: 0;
+}
 
 .card .content {
   display: block;
@@ -320,13 +180,11 @@ div.card {
   margin: 0 18px;
 }
 
-
 .card .content p {
   transition: all 0.5s;
   font-size: 0.8em;
   margin-bottom: 8px;
 }
-
 
 .card .content a {
   color: #1d8122;
@@ -335,90 +193,6 @@ div.card {
   font-size: 0.7rem;
   font-weight: 700;
   text-transform: uppercase;
-  align-items: center;
-}
-
-
-/* Hover effect para o título */
-.card:hover .header .title {
-  padding: 0;
-}
-
-
-
-
-
-/* From Uiverse.io by joe-watson-sbf */
-.card {
-  width: 190px;
-  height: 120px;
-  transition: all .5s;
-  box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.11),
-    -15px -15px 30px #00000015;
-  text-align: center;
-  overflow: hidden;
-
-
-
-}
-
-.card:hover {
-  height: 260px;
-}
-
-.card .header {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: #825B32;
-  margin-bottom: 16px;
-}
-
-.card .header .img-box {
-  width: 50px;
-}
-
-.card .header .title {
-  font-size: 1em;
-  letter-spacing: .1em;
-  font-weight: 900;
-  text-transform: uppercase;
-  padding: 4px 0 14px 0;
-  transition: all .5s;
-  color: #edededc5;
-}
-
-.card:hover .header {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
-}
-
-.card:hover .card .header .title {
-  padding: 0;
-}
-
-.card .content {
-  display: block;
-  text-align: left;
-  color: #000000;
-  margin: 0 18px;
-}
-
-.card .content p {
-  transition: all .5s;
-  font-size: .8em;
-  margin-bottom: 8px;
-}
-
-.card .content a {
-  color: #1d8122;
-  cursor: pointer;
-  transition: all .5s;
-  font-size: .7rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  align-items: center;
 }
 
 .card .content .btn-link:hover {
@@ -427,6 +201,61 @@ div.card {
 
 div.card {
   justify-content: right;
-  padding:2px;
+  padding: 2px;
   align-items: center;
+}
+
+
+.cards-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+
+
+/* Mobile */
+@media (max-width: 767px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .cards-container {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  main h2, main h3 {
+    font-size: 150%;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .cards-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+
+  main h2, main h3 {
+    font-size: 180%;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
 }
