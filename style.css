@@ -221,7 +221,7 @@ div.card {
 /* Mobile */
 @media (max-width: 767px) {
   nav ul {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .cards-container {
