@@ -126,7 +126,18 @@ footer {
   width: 100%;
   bottom: 0;
   align-items:center;
-  margin-top: 9.8%;
+  margin-top: 12rem;
+}
+
+.cardapio-footer {
+  background-color: var(--footer-bg-color);
+  color: var(--footer-text-color);
+  text-align: center;
+  padding: 10px;
+  max-width: 100%;
+  bottom: 0;
+  align-items:center;
+  margin-top: 12rem;
 }
 
 
